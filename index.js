@@ -62,12 +62,12 @@ axios.get("www.example.com/api/get/1 ").then((res) => {
 // QUE 5
 
 var obj = [
-  { id: "4", name: "abc" },
-  { id: "10", name: "ab2" },
-  { id: "5", name: "ab3" },
-  { id: "6", name: "ab4" },
+  { id: 4, name: "abc" },
+  { id: 10, name: "ab2" },
+  { id: 5, name: "ab3" },
+  { id: 6, name: "ab4" },
 ];
 obj.sort(function (a, b) {
-  return parseFloat(a.id) - parseFloat(b.id);
+  return a.id - b.id;
 });
 console.log(obj);
